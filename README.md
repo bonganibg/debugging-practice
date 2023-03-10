@@ -32,6 +32,22 @@ Our users have reported the following problems:
 
 Additionally, adding the #green, #red, or #orange values to the URL and then refreshing the page _does not_ update the colour of the cards.
 
+## Fixes
+- **Line 10**: Added `card.classList.contains('is-selected')` to make sure a selected item isn't selected twice 
+
+- **Line 18**: Added `selectedCards.push(card)` to add card to selected list 
+
+- **Line 24**: Changed index to 1,
+
+- **Line 37** Changed `card3` to `card2`
+
+- **Line 42**: Changed comparions to `===`
+
+- **Line 53** : Changed `.Cards` to `.cards`
+
+- **Line 54**: Removed additional h from `hashh` and added `replace("#", "")` to remove #
+
+
 ## Approach
 - Debug and fix each defect (in order if possible). Introduce each fix as a separate commit.
 - Focus on debugging the 'rules' (part 1)  before moving on to the 'bonus features' (part 2).
